@@ -1,0 +1,28 @@
+mqtt:
+  username: "lglClient"   #username to connect to MQTT broker
+  password: "1G1P@55WD"   #password to connect to MQTT broker
+  broker: "192.168.3.225"  #MQTT broker address
+  port: 1883              #MQTT broker port
+  client: "imech_01"      #Client name
+  topic: "pippo"          #Topic to be subscribed to
+ 
+db:
+  username: "lglUsr2021"  #Username to access DB
+  password: "lglPwd1202"  #Password to access DB
+  ip: "192.168.3.225"     #IP address to to access DB
+  # ip: "192.168.3.216"     #IP address to to access DB
+  schema: "prLgl"         #Database schema name
+  tables:
+    - "op_onevts"
+    - "op_alarmevts" 
+    - "op_alarmhrs" 
+    - "op_params"
+  start_date: 0           #Start date in format dd/mm/yyyy. If 0 it starts from default date- 01/01/2000, if 1 from last date
+  t_obs: 0.0166           #Time between observations in hrs
+  shift_num: 3            #Number of shifts
+  shift_hrs: 8            #hrs per shift
+
+  tab_acq: "Acquisizioni"   #Table for general info
+  tab_dat: "dati"           #Table for feeder parameters
+  # tab_acq: "t_acq"        #Table for general info
+  # tab_dat: "t_dat"        #Table for feeder parameters
