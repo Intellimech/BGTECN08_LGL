@@ -2,9 +2,11 @@ mqtt:
   username: "lglClient"   #username to connect to MQTT broker
   password: "1G1P@55WD"   #password to connect to MQTT broker
   broker: "192.168.3.225"  #MQTT broker address
+  # username: "" 
+  # password: ""
+  # broker: "test.mosquitto.org"
   port: 1883              #MQTT broker port
-  client: "imech_01"      #Client name
-  topic: "pippo"          #Topic to be subscribed to
+  taglist_reset_mins: 30  #Minutes after which the tag list is updated
  
 db:
   username: "lglUsr2021"  #Username to access DB
@@ -24,5 +26,3 @@ db:
 
   tab_acq: "Acquisizioni"   #Table for general info
   tab_dat: "dati"           #Table for feeder parameters
-  # tab_acq: "t_acq"        #Table for general info
-  # tab_dat: "t_dat"        #Table for feeder parameters

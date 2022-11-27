@@ -1,0 +1,626 @@
+2022/11/25 18:03:50 WARNING - [MqttManager.py : 92] Connection error: not authorised
+2022/11/25 18:03:51 WARNING - [MqttManager.py : 92] Connection error: not authorised
+2022/11/25 18:03:53 WARNING - [MqttManager.py : 92] Connection error: not authorised
+2022/11/25 18:03:57 WARNING - [MqttManager.py : 92] Connection error: not authorised
+2022/11/25 18:04:06 WARNING - [MqttManager.py : 92] Connection error: not authorised
+2022/11/25 18:04:22 WARNING - [MqttManager.py : 92] Connection error: not authorised
+2022/11/25 18:08:32 WARNING - [MqttManager.py : 92] Connection error: not authorised
+2022/11/25 18:09:43 WARNING - [MqttManager.py : 92] Connection error: not authorised
+2022/11/26 20:51:17 INFO - [MqttManager.py : 90] Successfully connected to MQTT broker
+2022/11/26 20:51:17 INFO - [MqttManager.py : 90] Successfully connected to MQTT broker
+2022/11/26 21:26:28 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:26:28 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:27:41 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:27:41 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:27:42 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:27:44 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:27:45 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:27:46 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:27:47 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:27:49 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:27:50 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:27:51 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:27:52 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:27:54 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:27:55 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:27:56 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:27:58 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:27:59 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:28:00 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:28:01 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:28:03 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:30:41 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:30:41 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:30:49 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:30:53 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:30:54 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:30:56 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:30:57 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:30:58 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:30:59 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:31:01 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:31:02 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:31:03 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:31:04 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:31:06 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:31:07 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:31:08 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:31:09 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:31:11 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:31:12 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:31:13 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:31:15 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:31:16 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:31:17 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:31:18 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:31:20 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:31:21 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:31:22 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:31:23 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:31:25 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:31:26 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:31:27 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:31:28 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:31:30 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:31:31 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:31:32 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:31:34 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:31:35 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:31:36 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:31:37 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:31:38 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:31:40 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:31:41 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:31:42 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:31:44 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:31:45 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:31:46 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:31:47 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:31:49 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:31:50 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:31:51 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:31:52 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:31:54 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:31:55 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:31:56 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:31:58 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:31:59 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:32:00 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:32:02 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:32:03 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:32:04 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:32:05 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:32:07 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:32:08 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:32:09 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:32:10 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:32:12 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:32:13 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:32:14 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:32:15 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:32:17 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:32:18 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:32:19 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:32:21 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:32:22 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:32:23 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:32:24 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:32:26 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:32:27 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:32:28 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:32:30 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:32:31 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:32:32 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:32:33 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:32:35 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:32:36 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:32:37 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:32:39 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:32:40 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:32:41 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:32:42 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:32:44 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:32:45 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:32:46 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:32:47 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:32:49 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:32:50 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:32:51 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:32:52 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:32:54 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:32:55 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:32:56 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:32:57 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:32:59 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:33:00 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:33:01 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:33:02 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:33:04 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:33:05 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:33:06 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:34:29 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:34:29 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:34:34 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:34:34 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:34:35 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:34:36 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:34:38 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:34:39 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:34:40 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:34:41 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:34:43 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:34:44 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:34:45 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:34:47 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:34:48 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:34:49 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:34:51 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:34:52 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:34:53 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:34:54 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:34:56 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:34:57 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:34:58 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:34:59 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:35:01 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:35:02 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:35:03 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:35:04 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:35:06 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:35:07 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:35:08 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:35:10 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:35:11 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:35:12 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:35:13 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:35:15 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:35:16 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:35:17 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:35:18 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:35:20 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:35:21 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:35:22 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:35:23 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:35:25 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:35:26 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:35:27 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:35:28 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:35:30 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:35:31 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:35:32 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:35:34 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:35:35 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:35:36 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:35:37 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:35:39 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:35:40 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:35:41 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:35:42 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:35:44 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:35:45 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:35:46 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:35:48 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:35:49 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:35:50 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:35:51 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:35:53 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:36:13 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:36:13 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:36:15 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:36:16 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:36:17 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:36:19 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:36:20 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:36:21 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:36:22 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:36:23 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:36:25 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:36:26 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:36:27 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:36:28 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:36:30 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:36:31 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:36:32 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:36:33 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:36:35 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:36:36 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:36:37 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:36:38 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:36:40 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:36:41 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:36:42 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:36:43 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:36:45 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:36:46 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:36:47 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:36:49 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:36:50 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:37:10 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:37:10 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:37:11 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:37:12 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:37:14 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:37:15 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:37:16 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:37:17 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:37:19 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:37:20 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:37:21 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:37:22 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:37:24 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:37:25 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:37:26 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:37:28 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:37:29 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:37:30 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:37:32 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:37:33 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:37:34 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:37:35 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:37:37 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:37:38 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:37:39 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:37:40 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:37:42 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:37:43 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:37:44 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:37:46 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:37:47 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:37:48 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:37:49 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:37:51 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:37:52 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:37:53 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:37:54 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:37:56 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:37:57 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:37:58 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:37:59 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:38:01 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:38:02 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:38:03 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:38:05 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:38:06 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:38:07 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:38:08 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:38:10 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:38:11 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:38:12 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:38:13 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:38:15 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:38:16 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:38:17 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:38:18 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:38:20 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:38:21 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:38:22 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:38:23 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:38:25 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:38:26 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:38:27 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:38:28 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:38:30 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:38:31 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:38:32 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:38:33 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:38:35 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:38:36 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:38:37 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:38:38 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:38:40 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:38:41 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:38:42 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:38:43 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:38:45 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:38:46 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:38:47 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:38:49 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:38:50 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:38:51 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:38:53 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:38:54 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:38:55 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:38:56 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:38:58 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:38:59 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:39:00 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:39:01 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:39:03 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:39:04 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:39:05 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:39:07 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:39:08 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:39:09 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:39:10 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:39:12 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:39:13 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:39:14 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:39:15 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:39:16 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:39:18 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:39:19 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:39:20 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:39:22 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:39:23 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:39:24 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:39:25 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:39:27 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:39:28 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:39:29 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:39:30 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:39:32 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:39:33 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:39:34 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:39:35 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:39:37 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:39:38 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:39:39 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:39:40 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:39:42 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:39:43 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:39:44 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:39:45 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:39:47 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:39:48 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:39:49 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:39:51 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:39:52 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:39:53 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:39:54 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:39:56 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:39:57 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:39:58 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:39:59 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:40:01 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:40:02 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:40:03 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:40:05 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:40:06 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:40:07 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:40:08 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:40:10 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:40:11 INFO - [MqttManager.py : 89] Successfully connected to MQTT broker
+2022/11/26 21:40:55 INFO - [MqttManager.py : 90] Successfully connected to MQTT broker
+2022/11/26 21:40:56 INFO - [MqttManager.py : 90] Successfully connected to MQTT broker
+2022/11/26 21:40:57 INFO - [MqttManager.py : 90] Successfully connected to MQTT broker
+2022/11/26 21:40:58 INFO - [MqttManager.py : 90] Successfully connected to MQTT broker
+2022/11/26 21:40:59 INFO - [MqttManager.py : 90] Successfully connected to MQTT broker
+2022/11/26 21:41:01 INFO - [MqttManager.py : 90] Successfully connected to MQTT broker
+2022/11/26 21:41:02 INFO - [MqttManager.py : 90] Successfully connected to MQTT broker
+2022/11/26 21:41:03 INFO - [MqttManager.py : 90] Successfully connected to MQTT broker
+2022/11/26 21:41:04 INFO - [MqttManager.py : 90] Successfully connected to MQTT broker
+2022/11/26 21:41:06 INFO - [MqttManager.py : 90] Successfully connected to MQTT broker
+2022/11/26 21:41:07 INFO - [MqttManager.py : 90] Successfully connected to MQTT broker
+2022/11/26 21:41:08 INFO - [MqttManager.py : 90] Successfully connected to MQTT broker
+2022/11/26 21:41:10 INFO - [MqttManager.py : 90] Successfully connected to MQTT broker
+2022/11/26 21:41:11 INFO - [MqttManager.py : 90] Successfully connected to MQTT broker
+2022/11/26 21:41:13 INFO - [MqttManager.py : 90] Successfully connected to MQTT broker
+2022/11/26 21:41:14 INFO - [MqttManager.py : 90] Successfully connected to MQTT broker
+2022/11/26 21:41:15 INFO - [MqttManager.py : 90] Successfully connected to MQTT broker
+2022/11/26 21:41:17 INFO - [MqttManager.py : 90] Successfully connected to MQTT broker
+2022/11/26 21:41:18 INFO - [MqttManager.py : 90] Successfully connected to MQTT broker
+2022/11/26 21:41:20 INFO - [MqttManager.py : 90] Successfully connected to MQTT broker
+2022/11/26 21:41:21 INFO - [MqttManager.py : 90] Successfully connected to MQTT broker
+2022/11/26 21:41:22 INFO - [MqttManager.py : 90] Successfully connected to MQTT broker
+2022/11/26 21:41:24 INFO - [MqttManager.py : 90] Successfully connected to MQTT broker
+2022/11/26 21:41:25 INFO - [MqttManager.py : 90] Successfully connected to MQTT broker
+2022/11/26 21:41:26 INFO - [MqttManager.py : 90] Successfully connected to MQTT broker
+2022/11/26 21:41:27 INFO - [MqttManager.py : 90] Successfully connected to MQTT broker
+2022/11/26 21:41:29 INFO - [MqttManager.py : 90] Successfully connected to MQTT broker
+2022/11/26 21:41:30 INFO - [MqttManager.py : 90] Successfully connected to MQTT broker
+2022/11/26 21:41:31 INFO - [MqttManager.py : 90] Successfully connected to MQTT broker
+2022/11/26 21:41:32 INFO - [MqttManager.py : 90] Successfully connected to MQTT broker
+2022/11/26 21:41:34 INFO - [MqttManager.py : 90] Successfully connected to MQTT broker
+2022/11/26 21:41:35 INFO - [MqttManager.py : 90] Successfully connected to MQTT broker
+2022/11/26 21:41:36 INFO - [MqttManager.py : 90] Successfully connected to MQTT broker
+2022/11/26 21:41:38 INFO - [MqttManager.py : 90] Successfully connected to MQTT broker
+2022/11/26 21:41:39 INFO - [MqttManager.py : 90] Successfully connected to MQTT broker
+2022/11/26 21:41:40 INFO - [MqttManager.py : 90] Successfully connected to MQTT broker
+2022/11/26 21:41:41 INFO - [MqttManager.py : 90] Successfully connected to MQTT broker
+2022/11/26 21:41:43 INFO - [MqttManager.py : 90] Successfully connected to MQTT broker
+2022/11/26 21:41:44 INFO - [MqttManager.py : 90] Successfully connected to MQTT broker
+2022/11/26 21:41:45 INFO - [MqttManager.py : 90] Successfully connected to MQTT broker
+2022/11/26 21:41:46 INFO - [MqttManager.py : 90] Successfully connected to MQTT broker
+2022/11/26 21:41:48 INFO - [MqttManager.py : 90] Successfully connected to MQTT broker
+2022/11/26 21:41:49 INFO - [MqttManager.py : 90] Successfully connected to MQTT broker
+2022/11/26 21:41:50 INFO - [MqttManager.py : 90] Successfully connected to MQTT broker
+2022/11/26 21:41:51 INFO - [MqttManager.py : 90] Successfully connected to MQTT broker
+2022/11/26 21:41:53 INFO - [MqttManager.py : 90] Successfully connected to MQTT broker
+2022/11/26 21:41:54 INFO - [MqttManager.py : 90] Successfully connected to MQTT broker
+2022/11/26 21:41:55 INFO - [MqttManager.py : 90] Successfully connected to MQTT broker
+2022/11/26 21:41:56 INFO - [MqttManager.py : 90] Successfully connected to MQTT broker
+2022/11/26 21:41:58 INFO - [MqttManager.py : 90] Successfully connected to MQTT broker
+2022/11/26 21:41:59 INFO - [MqttManager.py : 90] Successfully connected to MQTT broker
+2022/11/26 21:42:00 INFO - [MqttManager.py : 90] Successfully connected to MQTT broker
+2022/11/26 21:42:01 INFO - [MqttManager.py : 90] Successfully connected to MQTT broker
+2022/11/26 21:42:03 INFO - [MqttManager.py : 90] Successfully connected to MQTT broker
+2022/11/26 21:42:04 INFO - [MqttManager.py : 90] Successfully connected to MQTT broker
+2022/11/26 21:42:05 INFO - [MqttManager.py : 90] Successfully connected to MQTT broker
+2022/11/26 21:42:07 INFO - [MqttManager.py : 90] Successfully connected to MQTT broker
+2022/11/26 21:42:08 INFO - [MqttManager.py : 90] Successfully connected to MQTT broker
+2022/11/26 21:42:09 INFO - [MqttManager.py : 90] Successfully connected to MQTT broker
+2022/11/26 21:42:10 INFO - [MqttManager.py : 90] Successfully connected to MQTT broker
+2022/11/26 21:42:12 INFO - [MqttManager.py : 90] Successfully connected to MQTT broker
+2022/11/26 21:42:13 INFO - [MqttManager.py : 90] Successfully connected to MQTT broker
+2022/11/26 21:42:14 INFO - [MqttManager.py : 90] Successfully connected to MQTT broker
+2022/11/26 21:42:16 INFO - [MqttManager.py : 90] Successfully connected to MQTT broker
+2022/11/26 21:42:17 INFO - [MqttManager.py : 90] Successfully connected to MQTT broker
+2022/11/26 21:42:18 INFO - [MqttManager.py : 90] Successfully connected to MQTT broker
+2022/11/26 21:42:19 INFO - [MqttManager.py : 90] Successfully connected to MQTT broker
+2022/11/26 21:42:21 INFO - [MqttManager.py : 90] Successfully connected to MQTT broker
+2022/11/26 21:42:22 INFO - [MqttManager.py : 90] Successfully connected to MQTT broker
+2022/11/26 21:42:23 INFO - [MqttManager.py : 90] Successfully connected to MQTT broker
+2022/11/26 21:42:24 INFO - [MqttManager.py : 90] Successfully connected to MQTT broker
+2022/11/26 21:42:26 INFO - [MqttManager.py : 90] Successfully connected to MQTT broker
+2022/11/26 21:42:27 INFO - [MqttManager.py : 90] Successfully connected to MQTT broker
+2022/11/26 21:42:28 INFO - [MqttManager.py : 90] Successfully connected to MQTT broker
+2022/11/26 21:42:29 INFO - [MqttManager.py : 90] Successfully connected to MQTT broker
+2022/11/26 21:42:31 INFO - [MqttManager.py : 90] Successfully connected to MQTT broker
+2022/11/26 21:42:32 INFO - [MqttManager.py : 90] Successfully connected to MQTT broker
+2022/11/26 21:42:33 INFO - [MqttManager.py : 90] Successfully connected to MQTT broker
+2022/11/26 21:42:34 INFO - [MqttManager.py : 90] Successfully connected to MQTT broker
+2022/11/26 21:42:36 INFO - [MqttManager.py : 90] Successfully connected to MQTT broker
+2022/11/26 21:42:37 INFO - [MqttManager.py : 90] Successfully connected to MQTT broker
+2022/11/26 21:42:38 INFO - [MqttManager.py : 90] Successfully connected to MQTT broker
+2022/11/26 21:42:39 INFO - [MqttManager.py : 90] Successfully connected to MQTT broker
+2022/11/26 21:42:40 INFO - [MqttManager.py : 90] Successfully connected to MQTT broker
+2022/11/26 21:42:42 INFO - [MqttManager.py : 90] Successfully connected to MQTT broker
+2022/11/26 21:42:43 INFO - [MqttManager.py : 90] Successfully connected to MQTT broker
+2022/11/26 21:42:44 INFO - [MqttManager.py : 90] Successfully connected to MQTT broker
+2022/11/26 21:42:45 INFO - [MqttManager.py : 90] Successfully connected to MQTT broker
+2022/11/26 21:42:47 INFO - [MqttManager.py : 90] Successfully connected to MQTT broker
+2022/11/26 21:42:48 INFO - [MqttManager.py : 90] Successfully connected to MQTT broker
+2022/11/26 21:42:49 INFO - [MqttManager.py : 90] Successfully connected to MQTT broker
+2022/11/26 21:42:50 INFO - [MqttManager.py : 90] Successfully connected to MQTT broker
+2022/11/26 21:42:52 INFO - [MqttManager.py : 90] Successfully connected to MQTT broker
+2022/11/26 21:42:53 INFO - [MqttManager.py : 90] Successfully connected to MQTT broker
+2022/11/26 21:42:54 INFO - [MqttManager.py : 90] Successfully connected to MQTT broker
+2022/11/26 21:42:56 INFO - [MqttManager.py : 90] Successfully connected to MQTT broker
+2022/11/26 21:42:57 INFO - [MqttManager.py : 90] Successfully connected to MQTT broker
+2022/11/26 21:42:58 INFO - [MqttManager.py : 90] Successfully connected to MQTT broker
+2022/11/26 21:42:59 INFO - [MqttManager.py : 90] Successfully connected to MQTT broker
+2022/11/26 21:43:01 INFO - [MqttManager.py : 90] Successfully connected to MQTT broker
+2022/11/26 21:43:02 INFO - [MqttManager.py : 90] Successfully connected to MQTT broker
+2022/11/26 21:43:03 INFO - [MqttManager.py : 90] Successfully connected to MQTT broker
+2022/11/26 21:43:04 INFO - [MqttManager.py : 90] Successfully connected to MQTT broker
+2022/11/26 21:43:06 INFO - [MqttManager.py : 90] Successfully connected to MQTT broker
+2022/11/26 21:43:07 INFO - [MqttManager.py : 90] Successfully connected to MQTT broker
+2022/11/26 21:43:08 INFO - [MqttManager.py : 90] Successfully connected to MQTT broker
+2022/11/26 21:43:10 INFO - [MqttManager.py : 90] Successfully connected to MQTT broker
+2022/11/26 21:43:11 INFO - [MqttManager.py : 90] Successfully connected to MQTT broker
+2022/11/26 21:43:12 INFO - [MqttManager.py : 90] Successfully connected to MQTT broker
+2022/11/26 21:43:13 INFO - [MqttManager.py : 90] Successfully connected to MQTT broker
+2022/11/26 21:43:15 INFO - [MqttManager.py : 90] Successfully connected to MQTT broker
+2022/11/26 21:43:16 INFO - [MqttManager.py : 90] Successfully connected to MQTT broker
+2022/11/26 21:43:17 INFO - [MqttManager.py : 90] Successfully connected to MQTT broker
+2022/11/26 21:43:18 INFO - [MqttManager.py : 90] Successfully connected to MQTT broker
+2022/11/26 21:43:19 INFO - [MqttManager.py : 90] Successfully connected to MQTT broker
+2022/11/26 21:43:21 INFO - [MqttManager.py : 90] Successfully connected to MQTT broker
+2022/11/26 21:43:22 INFO - [MqttManager.py : 90] Successfully connected to MQTT broker
+2022/11/26 21:43:23 INFO - [MqttManager.py : 90] Successfully connected to MQTT broker
+2022/11/26 21:43:25 INFO - [MqttManager.py : 90] Successfully connected to MQTT broker
+2022/11/26 21:43:26 INFO - [MqttManager.py : 90] Successfully connected to MQTT broker
+2022/11/26 21:43:27 INFO - [MqttManager.py : 90] Successfully connected to MQTT broker
+2022/11/26 21:43:28 INFO - [MqttManager.py : 90] Successfully connected to MQTT broker
+2022/11/26 21:43:40 INFO - [MqttManager.py : 90] Successfully connected to MQTT broker
+2022/11/26 21:43:40 INFO - [MqttManager.py : 90] Successfully connected to MQTT broker
+2022/11/26 21:43:41 INFO - [MqttManager.py : 90] Successfully connected to MQTT broker
+2022/11/26 21:43:43 INFO - [MqttManager.py : 90] Successfully connected to MQTT broker
+2022/11/26 21:43:44 INFO - [MqttManager.py : 90] Successfully connected to MQTT broker
+2022/11/26 21:43:45 INFO - [MqttManager.py : 90] Successfully connected to MQTT broker
+2022/11/26 21:43:46 INFO - [MqttManager.py : 90] Successfully connected to MQTT broker
+2022/11/26 21:43:48 INFO - [MqttManager.py : 90] Successfully connected to MQTT broker
+2022/11/26 21:43:49 INFO - [MqttManager.py : 90] Successfully connected to MQTT broker
+2022/11/26 21:43:50 INFO - [MqttManager.py : 90] Successfully connected to MQTT broker
+2022/11/26 21:43:52 INFO - [MqttManager.py : 90] Successfully connected to MQTT broker
+2022/11/26 21:43:53 INFO - [MqttManager.py : 90] Successfully connected to MQTT broker
+2022/11/26 21:43:54 INFO - [MqttManager.py : 90] Successfully connected to MQTT broker
+2022/11/26 21:43:55 INFO - [MqttManager.py : 90] Successfully connected to MQTT broker
+2022/11/26 21:43:57 INFO - [MqttManager.py : 90] Successfully connected to MQTT broker
+2022/11/26 21:43:58 INFO - [MqttManager.py : 90] Successfully connected to MQTT broker
+2022/11/26 21:43:59 INFO - [MqttManager.py : 90] Successfully connected to MQTT broker
+2022/11/26 21:44:01 INFO - [MqttManager.py : 90] Successfully connected to MQTT broker
+2022/11/26 21:44:02 INFO - [MqttManager.py : 90] Successfully connected to MQTT broker
+2022/11/26 21:44:03 INFO - [MqttManager.py : 90] Successfully connected to MQTT broker
+2022/11/26 21:44:05 INFO - [MqttManager.py : 90] Successfully connected to MQTT broker
+2022/11/26 21:44:06 INFO - [MqttManager.py : 90] Successfully connected to MQTT broker
+2022/11/26 21:44:07 INFO - [MqttManager.py : 90] Successfully connected to MQTT broker
+2022/11/26 21:44:08 INFO - [MqttManager.py : 90] Successfully connected to MQTT broker
+2022/11/26 21:44:10 INFO - [MqttManager.py : 90] Successfully connected to MQTT broker
+2022/11/26 21:44:11 INFO - [MqttManager.py : 90] Successfully connected to MQTT broker
+2022/11/26 21:44:12 INFO - [MqttManager.py : 90] Successfully connected to MQTT broker
+2022/11/26 21:44:13 INFO - [MqttManager.py : 90] Successfully connected to MQTT broker
+2022/11/26 21:44:15 INFO - [MqttManager.py : 90] Successfully connected to MQTT broker
+2022/11/26 21:44:16 INFO - [MqttManager.py : 90] Successfully connected to MQTT broker
+2022/11/26 21:44:42 INFO - [MqttManager.py : 90] Successfully connected to MQTT broker
+2022/11/26 21:44:42 INFO - [MqttManager.py : 90] Successfully connected to MQTT broker
+2022/11/26 21:44:44 INFO - [MqttManager.py : 90] Successfully connected to MQTT broker
+2022/11/27 07:50:30 WARNING - [MqttManager.py : 92] Connection error: not authorised
+2022/11/27 07:50:32 WARNING - [MqttManager.py : 92] Connection error: not authorised
+2022/11/27 07:50:34 WARNING - [MqttManager.py : 92] Connection error: not authorised
+2022/11/27 07:50:38 WARNING - [MqttManager.py : 92] Connection error: not authorised
+2022/11/27 07:50:46 WARNING - [MqttManager.py : 92] Connection error: not authorised
+2022/11/27 07:55:05 INFO - [updateiDB.py : 61] Successfully connected to MQTT broker
+2022/11/27 08:04:59 WARNING - [updateiDB.py : 64] Connection error: not authorised
+2022/11/27 08:05:00 WARNING - [updateiDB.py : 64] Connection error: not authorised
+2022/11/27 08:05:03 WARNING - [updateiDB.py : 64] Connection error: not authorised
+2022/11/27 08:05:07 WARNING - [updateiDB.py : 64] Connection error: not authorised
+2022/11/27 08:05:15 WARNING - [updateiDB.py : 64] Connection error: not authorised
+2022/11/27 08:05:30 WARNING - [updateiDB.py : 64] Connection error: not authorised
+2022/11/27 08:05:31 WARNING - [updateiDB.py : 64] Connection error: not authorised
+2022/11/27 08:05:33 WARNING - [updateiDB.py : 64] Connection error: not authorised
+2022/11/27 08:05:37 WARNING - [updateiDB.py : 64] Connection error: not authorised
+2022/11/27 08:05:46 WARNING - [updateiDB.py : 64] Connection error: not authorised
+2022/11/27 08:06:02 WARNING - [updateiDB.py : 64] Connection error: not authorised
+2022/11/27 08:06:34 WARNING - [updateiDB.py : 64] Connection error: not authorised
+2022/11/27 08:07:38 WARNING - [updateiDB.py : 64] Connection error: not authorised
+2022/11/27 08:08:02 WARNING - [updateiDB.py : 64] Connection error: not authorised
+2022/11/27 08:08:03 WARNING - [updateiDB.py : 64] Connection error: not authorised
+2022/11/27 08:08:05 WARNING - [updateiDB.py : 64] Connection error: not authorised
+2022/11/27 08:08:09 WARNING - [updateiDB.py : 64] Connection error: not authorised
+2022/11/27 08:08:17 WARNING - [updateiDB.py : 64] Connection error: not authorised
+2022/11/27 08:08:33 WARNING - [updateiDB.py : 64] Connection error: not authorised
+2022/11/27 08:09:06 WARNING - [updateiDB.py : 64] Connection error: not authorised
+2022/11/27 08:10:10 WARNING - [updateiDB.py : 64] Connection error: not authorised
+2022/11/27 08:12:10 WARNING - [updateiDB.py : 64] Connection error: not authorised
+2022/11/27 08:14:10 WARNING - [updateiDB.py : 64] Connection error: not authorised
+2022/11/27 08:16:10 WARNING - [updateiDB.py : 64] Connection error: not authorised
+2022/11/27 08:18:10 WARNING - [updateiDB.py : 64] Connection error: not authorised
+2022/11/27 08:20:10 WARNING - [updateiDB.py : 64] Connection error: not authorised
+2022/11/27 08:22:10 WARNING - [updateiDB.py : 64] Connection error: not authorised
+2022/11/27 08:24:10 WARNING - [updateiDB.py : 64] Connection error: not authorised
+2022/11/27 08:26:10 WARNING - [updateiDB.py : 64] Connection error: not authorised
+2022/11/27 08:28:10 WARNING - [updateiDB.py : 64] Connection error: not authorised
+2022/11/27 08:30:10 WARNING - [updateiDB.py : 64] Connection error: not authorised
+2022/11/27 08:32:10 WARNING - [updateiDB.py : 64] Connection error: not authorised
+2022/11/27 08:34:10 WARNING - [updateiDB.py : 64] Connection error: not authorised
+2022/11/27 08:36:10 WARNING - [updateiDB.py : 64] Connection error: not authorised
+2022/11/27 08:38:11 WARNING - [updateiDB.py : 64] Connection error: not authorised
+2022/11/27 08:40:11 WARNING - [updateiDB.py : 64] Connection error: not authorised
+2022/11/27 08:42:11 WARNING - [updateiDB.py : 64] Connection error: not authorised
+2022/11/27 08:44:11 WARNING - [updateiDB.py : 64] Connection error: not authorised
+2022/11/27 08:46:11 WARNING - [updateiDB.py : 64] Connection error: not authorised
+2022/11/27 08:48:11 WARNING - [updateiDB.py : 64] Connection error: not authorised
+2022/11/27 08:50:11 WARNING - [updateiDB.py : 64] Connection error: not authorised
+2022/11/27 08:52:11 WARNING - [updateiDB.py : 64] Connection error: not authorised
+2022/11/27 08:54:11 WARNING - [updateiDB.py : 64] Connection error: not authorised
+2022/11/27 08:56:11 WARNING - [updateiDB.py : 64] Connection error: not authorised
+2022/11/27 08:58:11 WARNING - [updateiDB.py : 64] Connection error: not authorised
+2022/11/27 09:00:11 WARNING - [updateiDB.py : 64] Connection error: not authorised
+2022/11/27 09:02:11 WARNING - [updateiDB.py : 64] Connection error: not authorised
+2022/11/27 09:04:11 WARNING - [updateiDB.py : 64] Connection error: not authorised
+2022/11/27 09:06:12 WARNING - [updateiDB.py : 64] Connection error: not authorised
+2022/11/27 09:08:12 WARNING - [updateiDB.py : 64] Connection error: not authorised
+2022/11/27 09:10:12 WARNING - [updateiDB.py : 64] Connection error: not authorised
+2022/11/27 09:12:12 WARNING - [updateiDB.py : 64] Connection error: not authorised
+2022/11/27 09:14:12 WARNING - [updateiDB.py : 64] Connection error: not authorised
+2022/11/27 09:16:12 WARNING - [updateiDB.py : 64] Connection error: not authorised
+2022/11/27 09:18:12 WARNING - [updateiDB.py : 64] Connection error: not authorised
+2022/11/27 09:20:12 WARNING - [updateiDB.py : 64] Connection error: not authorised
+2022/11/27 09:22:12 WARNING - [updateiDB.py : 64] Connection error: not authorised
+2022/11/27 09:23:30 WARNING - [updateiDB.py : 64] Connection error: not authorised
+2022/11/27 09:28:08 INFO - [updateiDB.py : 61] Successfully connected to MQTT broker
+2022/11/27 09:30:10 INFO - [updateiDB.py : 61] Successfully connected to MQTT broker
+2022/11/27 09:30:11 INFO - [updateiDB.py : 61] Successfully connected to MQTT broker
+2022/11/27 09:45:40 INFO - [MqttManager.py : 93] Successfully connected to MQTT broker
+2022/11/27 09:45:41 INFO - [MqttManager.py : 93] Successfully connected to MQTT broker
+2022/11/27 10:27:12 INFO - [MqttManager.py : 92] Successfully connected to MQTT broker
+2022/11/27 10:27:13 INFO - [MqttManager.py : 92] Successfully connected to MQTT broker
+2022/11/27 10:28:29 INFO - [MqttManager.py : 92] Successfully connected to MQTT broker
+2022/11/27 10:28:30 INFO - [MqttManager.py : 92] Successfully connected to MQTT broker
+2022/11/27 10:29:30 INFO - [MqttManager.py : 92] Successfully connected to MQTT broker
+2022/11/27 10:29:31 INFO - [MqttManager.py : 92] Successfully connected to MQTT broker
+2022/11/27 10:31:11 INFO - [MqttManager.py : 92] Successfully connected to MQTT broker
+2022/11/27 10:31:12 INFO - [MqttManager.py : 92] Successfully connected to MQTT broker
+2022/11/27 10:33:02 INFO - [MqttManager.py : 92] Successfully connected to MQTT broker
+2022/11/27 10:33:03 INFO - [MqttManager.py : 92] Successfully connected to MQTT broker
+2022/11/27 14:04:09 INFO - [MqttManager.py : 91] Successfully connected to MQTT broker
+2022/11/27 14:04:10 INFO - [MqttManager.py : 91] Successfully connected to MQTT broker
+2022/11/27 14:07:11 INFO - [MqttManager.py : 91] Successfully connected to MQTT broker
+2022/11/27 14:07:12 INFO - [MqttManager.py : 91] Successfully connected to MQTT broker
+2022/11/27 14:17:06 INFO - [MqttManager.py : 91] Successfully connected to MQTT broker
+2022/11/27 14:17:07 INFO - [MqttManager.py : 91] Successfully connected to MQTT broker
+2022/11/27 16:05:44 INFO - [MqttManager.py : 91] Successfully connected to MQTT broker
+2022/11/27 16:05:45 INFO - [MqttManager.py : 91] Successfully connected to MQTT broker
+2022/11/27 22:47:32 INFO - [MqttManager.py : 93] Successfully connected to MQTT broker
+2022/11/27 22:47:34 INFO - [MqttManager.py : 93] Successfully connected to MQTT broker
