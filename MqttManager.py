@@ -37,16 +37,17 @@ class MqttManager(SqlManager):
         self.port_mqtt = configs['mqtt']['port']
         self.reset_time_s = int(configs['mqtt']['taglist_reset_mins']) * 60
         #Get available topics from the DB
-        self.topics = self.generateTopicList()
+        self.topics = self.genTopicList()
         
         self.clientlist = []
+        self.mqtt_connect_tries = 5
 
     def genClientName(self):
         """Generates new client names for multiple threads"""
         return ("LGL"+str(int(round(time.time() * 1000))))
 
     def genClients(self):
-        self.clientlist = []
+        self.clientlist.clear()
         for topic in self.topics:
             client = Client(self.genClientName())
             client.connected_flag = False
@@ -61,8 +62,12 @@ class MqttManager(SqlManager):
             client.on_message = self.on_message
 
             client.loop_start()
+
+            tries = 0
             while not client.connected_flag:
                 time.sleep(1)
+                if tries > self.mqtt_connect_tries:
+                    client.loop_stop()
 
             client.subscribe(topic)
 
@@ -81,7 +86,7 @@ class MqttManager(SqlManager):
         """
         if(not start_time or time.time()-start_time > self.reset_time_s):
             self.stopClients()
-            self.topics = self.generateTopicList()
+            self.topics = self.genTopicList()
             self.genClients()
             return(time.time())
         return(start_time)
@@ -94,12 +99,10 @@ class MqttManager(SqlManager):
             client.connected_flag = True
         else:
             logging.warning(f"Connection error: {self.error_codes[rc]}")
-            client.loop_stop()
 
     def on_message(self, client, userdata, message):
-        """ Prints message on the topic
+        """ Adds json message to insert queue
         """
-        # print("message received",str(message.payload.decode("utf-8")))
         try:
             str_json = str(message.payload.decode("utf-8"))
             py_json = json.loads(str_json)
@@ -107,9 +110,3 @@ class MqttManager(SqlManager):
             self.insertQ.append(py_json)
         except:
             logging.error('ERROR: Reading JSON file failed')
-        
-        # # try:
-        # id_acq = insert_acq(py_json,cfg.engine,cfg.t_acq)
-        # insert_dat(py_json,cfg.engine,cfg.t_dat,id_acq)
-        # # except:
-        # #     print('ERROR: Problem inserting into MYSQL DB')

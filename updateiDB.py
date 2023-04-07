@@ -6,16 +6,9 @@
 @notes:         
 """
 
-from sqlalchemy import create_engine
-import yaml
 import logging
-from paho.mqtt.client import Client
-import sys
 import time
-# import json
-
-
-# from sqlalchemy.sql.elements import Null
+import sys
 
 from MqttManager import MqttManager
 
@@ -30,9 +23,16 @@ logging.basicConfig(filename= 'updateDB.log',
 start_time = time.time()
 
 if __name__ == '__main__':
-    mqttMgr = MqttManager()
-    mqttMgr.regenClients()
+    # Initialize manager object
+    mgr = MqttManager()
+    # Generate mqtt clients for each topics
+    mgr.regenClients()
     while(True):
-        mqttMgr.insertData()
+        # Update database if data is found in the queue
+        mgr.insertData()
         # Regenerate topic list if timer expires
-        start_time = mqttMgr.regenClients(start_time)
+        start_time = mgr.regenClients(start_time)
+        if(not mgr.run_flag):
+            break
+    mgr.stopClients()
+    sys.exit()

@@ -1,8 +1,7 @@
 import yaml
 import logging
 import sys
-from sqlalchemy import create_engine, MetaData, func, select, and_,\
-                       Table, Column, String, DateTime, Integer, Float, DefaultClause
+from sqlalchemy import create_engine, MetaData, select, and_
 from sqlalchemy.dialects.mysql.dml import Insert 
 import datetime as dt
 
@@ -42,15 +41,15 @@ class SqlManager:
                 logging.error('Reading configuration file failed')
                 sys.exit()
             
-            
             # Constants for updating input data tables
             conn = f"mysql+pymysql://{configs['db']['username']}:{configs['db']['password']}@{configs['db']['ip']}/{configs['db']['schema']}"
             self.engine = create_engine(conn, echo = False)
             self.t_acq = configs['db']['tab_acq']
             self.t_dat = configs['db']['tab_dat']
             self.insertQ = []
+            self.run_flag = True
     
-    def generateTopicList(self):
+    def genTopicList(self):
         """Generates list of topics to subscribe to
         """
         db_metadata = MetaData(bind = self.engine)
@@ -58,10 +57,15 @@ class SqlManager:
         with self.engine.connect() as connection:
             with connection.begin():
                 table = db_metadata.tables["Machines"]            
-                stmt = select(table.c.MachineID)
+                stmt = select(table.c.MachineID.distinct())
                 retlist=[]
-                for result in connection.execute(stmt):
-                    retlist.append(result[0])
+                try:
+                    for result in connection.execute(stmt):
+                        retlist.append(result[0])
+                except Exception as e:
+                    logging.error(f"ERROR in SELECT in genTopicList:\n{str(e)}")
+                    self.run_flag = False
+                    retlist.clear()
                 return retlist
 
     def insert_dat(self, ip_json, pk):
@@ -93,7 +97,10 @@ class SqlManager:
                     stmt_ins = (Insert(table).
                         values(dic_values))
                     stmt_dup = stmt_ins.on_duplicate_key_update(dic_values)
-                    connection.execute(stmt_dup)
+                    try:
+                        connection.execute(stmt_dup)
+                    except Exception as e:
+                        logging.error(f"ERROR inserting data to 'Dati':\n{str(e)}")
 
     def insert_acq(self, ip_json):
         """
@@ -144,16 +151,37 @@ class SqlManager:
                 #SOLUTION check an entry for the same filename as you are about to enter
                 #         if it exists update the table, else it inserts         
                 stmt_sel =  table.select().\
-                            where(table.c.filename == dic_values["filename"])
-                res_sel = connection.execute(stmt_sel)
+                            where(and_(
+                                table.c.filename == dic_values["filename"],
+                                table.c.MachineDescriptor == dic_values["MachineDescriptor"]))
+                try:
+                    res_sel = connection.execute(stmt_sel)
+                except Exception as e:
+                    logging.error(f"SQL ERROR in insert_acq():\n{str(e)}")
+                    self.run_flag = False
+                    return(None)
 
                 if res_sel.rowcount > 0:
-                    stmt = table.update().where(table.c.filename == dic_values["filename"]).values(dic_values)
-                    result = connection.execute(stmt)
+                    stmt = table.update().\
+                            where(and_(
+                                table.c.filename == dic_values["filename"],
+                                table.c.MachineDescriptor == dic_values["MachineDescriptor"]
+                                )).values(dic_values)
+                    try:
+                        result = connection.execute(stmt)
+                    except Exception as e:
+                        logging.error(f"SQL ERROR in insert_acq():\n{str(e)}")
+                        self.run_flag = False
+                        return(None)
                     id = res_sel.all()[0][0]
                 else:
                     stmt = (Insert(table).values(dic_values))
-                    result = connection.execute(stmt)
+                    try:
+                        result = connection.execute(stmt)
+                    except Exception as e:
+                        logging.error(f"SQL ERROR in insert_acq():\n{str(e)}")
+                        self.run_flag = False
+                        return(None)
                     #Get autoincremented
                     id = result.inserted_primary_key[0]
             return(id)
@@ -163,5 +191,5 @@ class SqlManager:
         while len(self.insertQ) > 0:
             inJSON = self.insertQ.pop()
             id_acq = self.insert_acq(inJSON)
-            self.insert_dat(inJSON,id_acq)
-            pass
+            if(id_acq):
+                self.insert_dat(inJSON,id_acq)

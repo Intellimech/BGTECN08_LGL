@@ -12,7 +12,6 @@ db:
   username: "lglUsr2021"  #Username to access DB
   password: "lglPwd1202"  #Password to access DB
   ip: "192.168.3.225"     #IP address to to access DB
-  # ip: "192.168.3.216"     #IP address to to access DB
   schema: "prLgl"         #Database schema name
   tables:
     - "op_onevts"
