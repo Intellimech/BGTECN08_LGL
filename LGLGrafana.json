@@ -1,0 +1,1138 @@
+{
+  "annotations": {
+    "list": [
+      {
+        "builtIn": 1,
+        "datasource": "-- Grafana --",
+        "enable": true,
+        "hide": true,
+        "iconColor": "rgba(0, 211, 255, 1)",
+        "name": "Annotations & Alerts",
+        "target": {
+          "limit": 100,
+          "matchAny": false,
+          "tags": [],
+          "type": "dashboard"
+        },
+        "type": "dashboard"
+      }
+    ]
+  },
+  "editable": true,
+  "gnetId": null,
+  "graphTooltip": 0,
+  "id": 4,
+  "iteration": 1682494588665,
+  "links": [],
+  "panels": [
+    {
+      "datasource": "MySQL",
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "palette-classic"
+          },
+          "custom": {
+            "axisLabel": "",
+            "axisPlacement": "auto",
+            "barAlignment": 0,
+            "drawStyle": "line",
+            "fillOpacity": 0,
+            "gradientMode": "none",
+            "hideFrom": {
+              "legend": false,
+              "tooltip": false,
+              "viz": false
+            },
+            "lineInterpolation": "linear",
+            "lineWidth": 1,
+            "pointSize": 5,
+            "scaleDistribution": {
+              "type": "linear"
+            },
+            "showPoints": "auto",
+            "spanNulls": false,
+            "stacking": {
+              "group": "A",
+              "mode": "none"
+            },
+            "thresholdsStyle": {
+              "mode": "off"
+            }
+          },
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": null
+              }
+            ]
+          }
+        },
+        "overrides": [
+          {
+            "matcher": {
+              "id": "byFrameRefID",
+              "options": "B"
+            },
+            "properties": [
+              {
+                "id": "displayName",
+                "value": "Feeder $Feeder1"
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byFrameRefID",
+              "options": "C"
+            },
+            "properties": [
+              {
+                "id": "displayName",
+                "value": "Feeder $Feeder2"
+              }
+            ]
+          }
+        ]
+      },
+      "gridPos": {
+        "h": 8,
+        "w": 24,
+        "x": 0,
+        "y": 0
+      },
+      "id": 8,
+      "options": {
+        "legend": {
+          "calcs": [],
+          "displayMode": "list",
+          "placement": "right"
+        },
+        "tooltip": {
+          "mode": "single"
+        }
+      },
+      "targets": [
+        {
+          "format": "time_series",
+          "group": [],
+          "hide": true,
+          "metricColumn": "none",
+          "rawQuery": true,
+          "rawSql": "SELECT\n  timestamp AS \"time\",\n  T_des,\n  T_read,\n  Sm_steps,\n  Real_speed,\n  Torque, \n  Ftc_out,\n  Ftc_in, \n  Meter_cons, \n  Vbus_motor, \n  T_offset\nFROM op_params\nWHERE feeder = $Feeder1\nORDER BY timestamp",
+          "refId": "Original",
+          "select": [
+            [
+              {
+                "params": [
+                  "Ftc_in"
+                ],
+                "type": "column"
+              }
+            ]
+          ],
+          "table": "op_params",
+          "timeColumn": "timestamp",
+          "timeColumnType": "timestamp",
+          "where": []
+        },
+        {
+          "format": "time_series",
+          "group": [],
+          "hide": true,
+          "metricColumn": "none",
+          "rawQuery": true,
+          "rawSql": "SELECT\n  timestamp AS \"time\",\n  $param\nFROM op_params\nWHERE feeder = $Feeder1 AND MachineDescriptor = $mach\nORDER BY timestamp",
+          "refId": "Multi_Feeder1",
+          "select": [
+            [
+              {
+                "params": [
+                  "Id"
+                ],
+                "type": "column"
+              }
+            ]
+          ],
+          "table": "Acquisizioni",
+          "timeColumn": "timestamp",
+          "timeColumnType": "timestamp",
+          "where": [
+            {
+              "name": "$__timeFilter",
+              "params": [],
+              "type": "macro"
+            }
+          ]
+        },
+        {
+          "format": "time_series",
+          "group": [],
+          "hide": true,
+          "metricColumn": "none",
+          "rawQuery": true,
+          "rawSql": "SELECT\n  timestamp AS \"time\",\n  $param\nFROM op_params\nWHERE feeder = $Feeder2 AND MachineDescriptor = $mach\nORDER BY timestamp",
+          "refId": "Multi_Feeder2",
+          "select": [
+            [
+              {
+                "params": [
+                  "Id"
+                ],
+                "type": "column"
+              }
+            ]
+          ],
+          "table": "Acquisizioni",
+          "timeColumn": "timestamp",
+          "timeColumnType": "timestamp",
+          "where": [
+            {
+              "name": "$__timeFilter",
+              "params": [],
+              "type": "macro"
+            }
+          ]
+        },
+        {
+          "format": "table",
+          "group": [],
+          "hide": false,
+          "metricColumn": "none",
+          "rawQuery": true,
+          "rawSql": "SELECT\n  timestamp AS \"time\",\n  ${param:text} as \"Feeder $Feeder1\"\nFROM Acquisizioni as a\nINNER JOIN dati as d\nON a.Id = d.ID_aq\nWHERE d.ID_feeder = $Feeder1 AND a.MachineDescriptor = \"${mach}\"\nORDER BY timestamp",
+          "refId": "Multi_Feeder1_2",
+          "select": [
+            [
+              {
+                "params": [
+                  "Id"
+                ],
+                "type": "column"
+              }
+            ]
+          ],
+          "table": "Acquisizioni",
+          "timeColumn": "timestamp",
+          "timeColumnType": "timestamp",
+          "where": [
+            {
+              "name": "$__timeFilter",
+              "params": [],
+              "type": "macro"
+            }
+          ]
+        },
+        {
+          "format": "time_series",
+          "group": [],
+          "hide": false,
+          "metricColumn": "none",
+          "rawQuery": true,
+          "rawSql": "SELECT\r\n  timestamp AS \"time\",\r\n  ${param:text} as \"Feeder $Feeder2\"\r\nFROM Acquisizioni as a\r\nINNER JOIN dati as d\r\nON a.Id = d.ID_aq\r\nWHERE d.ID_feeder = $Feeder2 AND a.MachineDescriptor = \"${mach}\"\r\nORDER BY timestamp",
+          "refId": "Multi_Feeder2_2",
+          "select": [
+            [
+              {
+                "params": [
+                  "Id"
+                ],
+                "type": "column"
+              }
+            ]
+          ],
+          "table": "Acquisizioni",
+          "timeColumn": "timestamp",
+          "timeColumnType": "timestamp",
+          "where": [
+            {
+              "name": "$__timeFilter",
+              "params": [],
+              "type": "macro"
+            }
+          ]
+        }
+      ],
+      "title": "Feeder Level Comparison:  ${param:value}",
+      "transparent": true,
+      "type": "timeseries"
+    },
+    {
+      "datasource": "MySQL",
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "thresholds"
+          },
+          "custom": {
+            "axisLabel": "",
+            "axisPlacement": "left",
+            "axisSoftMin": 0,
+            "fillOpacity": 80,
+            "gradientMode": "none",
+            "hideFrom": {
+              "legend": false,
+              "tooltip": false,
+              "viz": false
+            },
+            "lineWidth": 1
+          },
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "orange",
+                "value": null
+              },
+              {
+                "color": "dark-red",
+                "value": 24
+              }
+            ]
+          }
+        },
+        "overrides": [
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "on_evts"
+            },
+            "properties": [
+              {
+                "id": "color",
+                "value": {
+                  "fixedColor": "purple",
+                  "mode": "fixed"
+                }
+              },
+              {
+                "id": "displayName",
+                "value": "Eventi di accensione"
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "on_hrs"
+            },
+            "properties": [
+              {
+                "id": "color",
+                "value": {
+                  "fixedColor": "orange",
+                  "mode": "thresholds"
+                }
+              },
+              {
+                "id": "displayName",
+                "value": "Ore di accensione"
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "efficiency"
+            },
+            "properties": [
+              {
+                "id": "color",
+                "value": {
+                  "fixedColor": "blue",
+                  "mode": "fixed"
+                }
+              },
+              {
+                "id": "displayName",
+                "value": "Efficienza"
+              }
+            ]
+          }
+        ]
+      },
+      "gridPos": {
+        "h": 7,
+        "w": 24,
+        "x": 0,
+        "y": 8
+      },
+      "id": 4,
+      "options": {
+        "barWidth": 0.95,
+        "groupWidth": 0.48,
+        "legend": {
+          "calcs": [],
+          "displayMode": "list",
+          "placement": "right"
+        },
+        "orientation": "auto",
+        "showValue": "auto",
+        "stacking": "none",
+        "text": {},
+        "tooltip": {
+          "mode": "single"
+        }
+      },
+      "targets": [
+        {
+          "format": "table",
+          "group": [],
+          "hide": true,
+          "metricColumn": "date",
+          "rawQuery": true,
+          "rawSql": "SELECT\n  timestamp AS \"time\",\n  on_evts,\n  on_hrs,\n  efficiency,\n  date AS metric\nFROM op_onevts\nWHERE\n  $__timeFilter(timestamp)\nORDER BY timestamp",
+          "refId": "Original",
+          "select": [
+            [
+              {
+                "params": [
+                  "on_evts"
+                ],
+                "type": "column"
+              }
+            ],
+            [
+              {
+                "params": [
+                  "on_hrs"
+                ],
+                "type": "column"
+              }
+            ]
+          ],
+          "table": "op_onevts",
+          "timeColumn": "timestamp",
+          "timeColumnType": "datetime",
+          "where": [
+            {
+              "name": "$__timeFilter",
+              "params": [],
+              "type": "macro"
+            }
+          ]
+        },
+        {
+          "format": "table",
+          "group": [],
+          "hide": false,
+          "metricColumn": "date",
+          "rawQuery": true,
+          "rawSql": "SELECT\n  timestamp AS \"time\",\n  on_evts,\n  on_hrs,\n  efficiency,\n  date AS metric\nFROM op_onevts\nWHERE\n  MachineDescriptor = \"$mach\" AND\n  $__timeFilter(timestamp)\nORDER BY timestamp",
+          "refId": "Multisite",
+          "select": [
+            [
+              {
+                "params": [
+                  "on_evts"
+                ],
+                "type": "column"
+              }
+            ],
+            [
+              {
+                "params": [
+                  "on_hrs"
+                ],
+                "type": "column"
+              }
+            ]
+          ],
+          "table": "op_onevts",
+          "timeColumn": "timestamp",
+          "timeColumnType": "datetime",
+          "where": [
+            {
+              "name": "$__timeFilter",
+              "params": [],
+              "type": "macro"
+            }
+          ]
+        }
+      ],
+      "title": "Machine Level On Events",
+      "transparent": true,
+      "type": "barchart"
+    },
+    {
+      "datasource": "MySQL",
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "thresholds"
+          },
+          "custom": {
+            "axisLabel": "",
+            "axisPlacement": "auto",
+            "axisSoftMin": 0,
+            "fillOpacity": 80,
+            "gradientMode": "none",
+            "hideFrom": {
+              "legend": false,
+              "tooltip": false,
+              "viz": false
+            },
+            "lineWidth": 1
+          },
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": null
+              }
+            ]
+          }
+        },
+        "overrides": [
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "Clean_Phot"
+            },
+            "properties": [
+              {
+                "id": "color",
+                "value": {
+                  "fixedColor": "super-light-red",
+                  "mode": "fixed"
+                }
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "ElBrk_Open"
+            },
+            "properties": [
+              {
+                "id": "color",
+                "value": {
+                  "fixedColor": "super-light-orange",
+                  "mode": "fixed"
+                }
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "Feeder_not_found"
+            },
+            "properties": [
+              {
+                "id": "color",
+                "value": {
+                  "fixedColor": "semi-dark-red",
+                  "mode": "fixed"
+                }
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "Motor_Lock"
+            },
+            "properties": [
+              {
+                "id": "color",
+                "value": {
+                  "fixedColor": "super-light-blue",
+                  "mode": "fixed"
+                }
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "OYB_Err"
+            },
+            "properties": [
+              {
+                "id": "color",
+                "value": {
+                  "fixedColor": "dark-purple",
+                  "mode": "fixed"
+                }
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "PrewindErr"
+            },
+            "properties": [
+              {
+                "id": "color",
+                "value": {
+                  "fixedColor": "purple",
+                  "mode": "fixed"
+                }
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "SMRangeErr"
+            },
+            "properties": [
+              {
+                "id": "color",
+                "value": {
+                  "fixedColor": "super-light-red",
+                  "mode": "fixed"
+                }
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "Switch_OFF"
+            },
+            "properties": [
+              {
+                "id": "color",
+                "value": {
+                  "fixedColor": "semi-dark-yellow",
+                  "mode": "fixed"
+                }
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "TensmtrErr"
+            },
+            "properties": [
+              {
+                "id": "color",
+                "value": {
+                  "fixedColor": "light-yellow",
+                  "mode": "fixed"
+                }
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "Yarn_Break"
+            },
+            "properties": [
+              {
+                "id": "color",
+                "value": {
+                  "fixedColor": "semi-dark-blue",
+                  "mode": "fixed"
+                }
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "Clean Phot"
+            },
+            "properties": [
+              {
+                "id": "color",
+                "value": {
+                  "fixedColor": "red",
+                  "mode": "fixed"
+                }
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "ElBrk Open"
+            },
+            "properties": [
+              {
+                "id": "color",
+                "value": {
+                  "fixedColor": "orange",
+                  "mode": "fixed"
+                }
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "Feeder not found"
+            },
+            "properties": [
+              {
+                "id": "color",
+                "value": {
+                  "fixedColor": "yellow",
+                  "mode": "fixed"
+                }
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "Motor Lock"
+            },
+            "properties": [
+              {
+                "id": "color",
+                "value": {
+                  "fixedColor": "green",
+                  "mode": "fixed"
+                }
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "OYB Err"
+            },
+            "properties": [
+              {
+                "id": "color",
+                "value": {
+                  "fixedColor": "blue",
+                  "mode": "fixed"
+                }
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "Switch OFF"
+            },
+            "properties": [
+              {
+                "id": "color",
+                "value": {
+                  "fixedColor": "super-light-orange",
+                  "mode": "fixed"
+                }
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "Yarn Break"
+            },
+            "properties": [
+              {
+                "id": "color",
+                "value": {
+                  "fixedColor": "light-green",
+                  "mode": "fixed"
+                }
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "Other Alarms"
+            },
+            "properties": [
+              {
+                "id": "color",
+                "value": {
+                  "fixedColor": "light-purple",
+                  "mode": "fixed"
+                }
+              }
+            ]
+          },
+          {
+            "__systemRef": "hideSeriesFrom",
+            "matcher": {
+              "id": "byNames",
+              "options": {
+                "mode": "exclude",
+                "names": [
+                  "ElBrk Open",
+                  "Feeder not found",
+                  "PrewindErr",
+                  "SMRangeErr",
+                  "TensmtrErr",
+                  "Other Alarms",
+                  "OYB Err",
+                  "Motor Lock",
+                  "Clean Phot",
+                  "Yarn Break"
+                ],
+                "prefix": "All except:",
+                "readOnly": true
+              }
+            },
+            "properties": [
+              {
+                "id": "custom.hideFrom",
+                "value": {
+                  "legend": false,
+                  "tooltip": false,
+                  "viz": true
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "gridPos": {
+        "h": 8,
+        "w": 24,
+        "x": 0,
+        "y": 15
+      },
+      "id": 6,
+      "options": {
+        "barWidth": 0.8,
+        "groupWidth": 0.7,
+        "legend": {
+          "calcs": [],
+          "displayMode": "list",
+          "placement": "right"
+        },
+        "orientation": "vertical",
+        "showValue": "auto",
+        "stacking": "none",
+        "text": {},
+        "tooltip": {
+          "mode": "single"
+        }
+      },
+      "pluginVersion": "8.1.5",
+      "targets": [
+        {
+          "format": "table",
+          "group": [],
+          "metricColumn": "date",
+          "rawQuery": true,
+          "rawSql": "SELECT\n  timestamp AS time,\n  `Clean Phot`,\n  `ElBrk Open`,\n  `Feeder not found`,\n  `Motor Lock`,\n  `OYB Err`,\n  `PrewindErr`,\n  `SMRangeErr`,\n  `Switch OFF`,\n  `TensmtrErr`,\n  `Yarn Break`,\n  `Other Alarms`,\n  date AS metric\nFROM op_alarmevts\nWHERE\n  MachineDescriptor = \"$mach\" AND\n  $__timeFilter(timestamp)\nORDER BY timestamp",
+          "refId": "MultiSite",
+          "select": [
+            [
+              {
+                "params": [
+                  "Clean_Phot"
+                ],
+                "type": "column"
+              }
+            ],
+            [
+              {
+                "params": [
+                  "ElBrk_Open"
+                ],
+                "type": "column"
+              }
+            ],
+            [
+              {
+                "params": [
+                  "Feeder_not_found"
+                ],
+                "type": "column"
+              }
+            ],
+            [
+              {
+                "params": [
+                  "Motor_Lock"
+                ],
+                "type": "column"
+              }
+            ],
+            [
+              {
+                "params": [
+                  "OYB_Err"
+                ],
+                "type": "column"
+              }
+            ],
+            [
+              {
+                "params": [
+                  "PrewindErr"
+                ],
+                "type": "column"
+              }
+            ],
+            [
+              {
+                "params": [
+                  "SMRangeErr"
+                ],
+                "type": "column"
+              }
+            ],
+            [
+              {
+                "params": [
+                  "Switch_OFF"
+                ],
+                "type": "column"
+              }
+            ],
+            [
+              {
+                "params": [
+                  "TensmtrErr"
+                ],
+                "type": "column"
+              }
+            ],
+            [
+              {
+                "params": [
+                  "Yarn_Break"
+                ],
+                "type": "column"
+              }
+            ]
+          ],
+          "table": "op_alarmevts",
+          "timeColumn": "timestamp",
+          "timeColumnType": "datetime",
+          "where": [
+            {
+              "name": "$__timeFilter",
+              "params": [],
+              "type": "macro"
+            }
+          ]
+        }
+      ],
+      "title": "Machine Level Alarm Events",
+      "transformations": [],
+      "transparent": true,
+      "type": "barchart"
+    }
+  ],
+  "refresh": false,
+  "schemaVersion": 30,
+  "style": "dark",
+  "tags": [],
+  "templating": {
+    "list": [
+      {
+        "allValue": null,
+        "current": {
+          "selected": false,
+          "text": "Stellini",
+          "value": "Stellini"
+        },
+        "datasource": null,
+        "definition": "SELECT DISTINCT(UserName) FROM Users",
+        "description": null,
+        "error": null,
+        "hide": 0,
+        "includeAll": false,
+        "label": "User",
+        "multi": false,
+        "name": "user",
+        "options": [],
+        "query": "SELECT DISTINCT(UserName) FROM Users",
+        "refresh": 1,
+        "regex": "",
+        "skipUrlSync": false,
+        "sort": 0,
+        "type": "query"
+      },
+      {
+        "allValue": null,
+        "current": {
+          "selected": false,
+          "text": "Magnago",
+          "value": "Magnago"
+        },
+        "datasource": null,
+        "definition": "SELECT DISTINCT(SiteName) FROM Sites WHERE UserName  = '${user}'",
+        "description": null,
+        "error": null,
+        "hide": 0,
+        "includeAll": false,
+        "label": "Site",
+        "multi": false,
+        "name": "site",
+        "options": [],
+        "query": "SELECT DISTINCT(SiteName) FROM Sites WHERE UserName  = '${user}'",
+        "refresh": 1,
+        "regex": "",
+        "skipUrlSync": false,
+        "sort": 1,
+        "type": "query"
+      },
+      {
+        "allValue": null,
+        "current": {
+          "selected": false,
+          "text": "Macchina08",
+          "value": "Macchina08"
+        },
+        "datasource": null,
+        "definition": "SELECT DISTINCT(MachineDescriptor) FROM Machines WHERE UserName  = '${user}' AND SiteName = '${site}'",
+        "description": null,
+        "error": null,
+        "hide": 0,
+        "includeAll": false,
+        "label": "Machine",
+        "multi": false,
+        "name": "mach",
+        "options": [],
+        "query": "SELECT DISTINCT(MachineDescriptor) FROM Machines WHERE UserName  = '${user}' AND SiteName = '${site}'",
+        "refresh": 1,
+        "regex": "",
+        "skipUrlSync": false,
+        "sort": 1,
+        "type": "query"
+      },
+      {
+        "allValue": "",
+        "current": {
+          "selected": false,
+          "text": "1",
+          "value": "1"
+        },
+        "datasource": "MySQL",
+        "definition": "SELECT DISTINCT ID_feeder\nFROM dati\nINNER JOIN Acquisizioni AS acq ON dati.id_aq =  acq.Id\nINNER JOIN Machines AS mac ON mac.MachineDescriptor = acq.MachineDescriptor\nWHERE mac.MachineDescriptor= '${mach}'",
+        "description": null,
+        "error": null,
+        "hide": 0,
+        "includeAll": false,
+        "label": null,
+        "multi": false,
+        "name": "Feeder1",
+        "options": [],
+        "query": "SELECT DISTINCT ID_feeder\nFROM dati\nINNER JOIN Acquisizioni AS acq ON dati.id_aq =  acq.Id\nINNER JOIN Machines AS mac ON mac.MachineDescriptor = acq.MachineDescriptor\nWHERE mac.MachineDescriptor= '${mach}'",
+        "refresh": 1,
+        "regex": "",
+        "skipUrlSync": false,
+        "sort": 0,
+        "type": "query"
+      },
+      {
+        "allValue": "",
+        "current": {
+          "selected": false,
+          "text": "2",
+          "value": "2"
+        },
+        "datasource": "MySQL",
+        "definition": "SELECT DISTINCT ID_feeder\nFROM dati\nINNER JOIN Acquisizioni AS acq ON dati.id_aq =  acq.Id\nINNER JOIN Machines AS mac ON mac.MachineDescriptor = acq.MachineDescriptor\nWHERE mac.MachineDescriptor= '${mach}'",
+        "description": null,
+        "error": null,
+        "hide": 0,
+        "includeAll": false,
+        "label": null,
+        "multi": false,
+        "name": "Feeder2",
+        "options": [],
+        "query": "SELECT DISTINCT ID_feeder\nFROM dati\nINNER JOIN Acquisizioni AS acq ON dati.id_aq =  acq.Id\nINNER JOIN Machines AS mac ON mac.MachineDescriptor = acq.MachineDescriptor\nWHERE mac.MachineDescriptor= '${mach}'",
+        "refresh": 1,
+        "regex": "",
+        "skipUrlSync": false,
+        "sort": 0,
+        "type": "query"
+      },
+      {
+        "allValue": null,
+        "current": {
+          "selected": false,
+          "text": "Sm_steps",
+          "value": "Sm_steps (steps)"
+        },
+        "description": null,
+        "error": null,
+        "hide": 0,
+        "includeAll": false,
+        "label": "Parameter",
+        "multi": false,
+        "name": "param",
+        "options": [
+          {
+            "selected": false,
+            "text": "T_des",
+            "value": "T_des (dgr)"
+          },
+          {
+            "selected": false,
+            "text": "T_read",
+            "value": "T_read (dgr)"
+          },
+          {
+            "selected": true,
+            "text": "Sm_steps",
+            "value": "Sm_steps (steps)"
+          },
+          {
+            "selected": false,
+            "text": "Real_speed",
+            "value": "Real_speed (rpm)"
+          },
+          {
+            "selected": false,
+            "text": "Torque",
+            "value": "Torque (mNm)"
+          },
+          {
+            "selected": false,
+            "text": "Ftc_out",
+            "value": "Ftc_out (mA)"
+          },
+          {
+            "selected": false,
+            "text": "Ftc_in",
+            "value": "Ftc_in (mA)"
+          },
+          {
+            "selected": false,
+            "text": "Meter_cons",
+            "value": "Meter_cons (m)"
+          },
+          {
+            "selected": false,
+            "text": "Vbus_motor",
+            "value": "Vbus_motor (V)"
+          },
+          {
+            "selected": false,
+            "text": "T_offset",
+            "value": "T_offset (dgr)"
+          }
+        ],
+        "query": "T_des : T_des (dgr), T_read : T_read (dgr), Sm_steps : Sm_steps (steps), Real_speed : Real_speed (rpm), Torque : Torque (mNm), Ftc_out : Ftc_out (mA), Ftc_in : Ftc_in (mA), Meter_cons : Meter_cons (m), Vbus_motor : Vbus_motor (V), T_offset : T_offset (dgr)",
+        "queryValue": "",
+        "skipUrlSync": false,
+        "type": "custom"
+      }
+    ]
+  },
+  "time": {
+    "from": "2023-01-23T23:00:00.000Z",
+    "to": "2023-01-31T22:59:59.000Z"
+  },
+  "timepicker": {},
+  "timezone": "",
+  "title": "LGL Multisite",
+  "uid": "Sa3QZXYVk",
+  "version": 10
+}

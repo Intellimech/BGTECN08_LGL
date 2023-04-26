@@ -1,7 +1,10 @@
 ### Python ###
 # Test code
- test.py
- 
+test.py
+
+# Log files
+*.log
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
