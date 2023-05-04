@@ -1,4 +1,7 @@
 ### Python ###
+# Test file
+test.py
+
 # Log file
 *.log
 
