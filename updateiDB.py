@@ -1,7 +1,8 @@
 """
-@date:          23/11/2022
+@date created:  23/11/2022
+@date modified: 08/05/2023
 @author:        Rohan Vangal
-@brief:         Back-end function to update database with data from multiple sites and machines via MQTT broker 
+@brief:         Back-end function to update database with data for predictive maintenance of yarn breaks
 @description:   
 @notes:         
 """
@@ -25,7 +26,7 @@ start_time = time.time()
 if __name__ == '__main__':
     # Initialize manager object
     mgr = MqttManager()
-    # Generate mqtt clients for each topics
+    # Generate mqtt clients for each topic
     mgr.regenClients()
     while(True):
         # Update database if data is found in the queue

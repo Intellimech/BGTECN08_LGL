@@ -1,17 +1,19 @@
 # LGL Database Updater
-This solution updates the internal database with data from multiple sites published via MQTT
+This solution updates the internal database with data from analysis of Yarn break faults published via MQTT
 ## Features
 - Multi thread subscription manager that gets data from MQTT
 - A queue manages the insertion of data to the MySQL database
-- Periodically, the topic list to subscribe to is updated from the database
 
 ## Deployment
 The project is intended for deployment using the updateiDB.py file
 Dependencies can be installed via the requirements.txt file
 All configuration parameters can be modified in the configs.yaml file
 
+## Note on format of JSON
+Please refer to TestJSON.txt for an example of the format of the message periodically received
+
 ## TODO
-- Check concurrency problems with queue
+
 
 ## Credits
 **Client**: LGL

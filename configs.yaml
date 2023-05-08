@@ -7,6 +7,7 @@ mqtt:
   # broker: "test.mosquitto.org"
   port: 1883              #MQTT broker port
   taglist_reset_mins: 30  #Minutes after which the tag list is updated
+  topic: "alarm"          #Topic to subscribe to
  
 db:
   username: "lglUsr2021"  #Username to access DB

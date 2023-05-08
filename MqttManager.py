@@ -15,7 +15,6 @@ class MqttManager(SqlManager):
                     4: "bad username or password",
                     5: "not authorised"}
 
-    # def __init__(self,obj) -> None:
     def __init__(self) -> None:
         """ Get constants from config file
         """
@@ -37,7 +36,7 @@ class MqttManager(SqlManager):
         self.port_mqtt = configs['mqtt']['port']
         self.reset_time_s = int(configs['mqtt']['taglist_reset_mins']) * 60
         #Get available topics from the DB
-        self.topics = self.genTopicList()
+        self.topics = [configs['mqtt']['topic']]
         
         self.clientlist = []
         self.mqtt_connect_tries = 5
@@ -86,7 +85,7 @@ class MqttManager(SqlManager):
         """
         if(not start_time or time.time()-start_time > self.reset_time_s):
             self.stopClients()
-            self.topics = self.genTopicList()
+            # self.topics = self.genTopicList()
             self.genClients()
             return(time.time())
         return(start_time)
@@ -106,7 +105,7 @@ class MqttManager(SqlManager):
         try:
             str_json = str(message.payload.decode("utf-8"))
             py_json = json.loads(str_json)
-            py_json["Topic"] = str(message.topic)
+            # py_json["Topic"] = str(message.topic)
             self.insertQ.append(py_json)
         except:
             logging.error('ERROR: Reading JSON file failed')

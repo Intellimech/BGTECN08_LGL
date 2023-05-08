@@ -1,0 +1,25 @@
+{
+   "gatewayId":"gtw-lgl-alarm",
+   "deviceId":"Macchina08-53",
+   "timestamp":1682698026401,
+   "diagnostics":[
+      {
+         "name":"alert-forecast-minutes",
+         "value":"1440"
+      },
+      {
+         "name":"alert-category",
+         "value":"yarn-break"
+      }
+   ],
+   "metadatas":[
+      {
+         "name":"machine-id",
+         "text":"Macchina08"
+      },
+      {
+         "name":"feeder-id",
+         "text":"53"
+      }
+   ]
+}
