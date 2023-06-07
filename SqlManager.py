@@ -278,6 +278,7 @@ class SqlManager:
                 order_by(t_dati.c.ID_aq)
 
         dframe = pd.read_sql(query,self.engine)
+        dframe['Status'] = dframe['Status'].str.strip()
 
         #For each machine found in the query
         for (mid,mdesc) in dframe[['MachineID','MachineDescriptor']].apply(tuple,axis=1).unique():
@@ -285,9 +286,6 @@ class SqlManager:
                     
             datelist = sorted(pd.unique(df['timestamp'].dt.date))
             if len(datelist) != 0:
-                df['Status'] = df['Status'].str.strip()
-                # df_obj = df.select_dtypes(['Status'])
-                # df[df_obj.columns] = df_obj.apply(lambda x: x.str.strip())
 
                 #For each date found in the query
                 for adate in datelist:
@@ -508,8 +506,8 @@ class SqlManager:
                         # Implement the creation
                         metadata.create_all()
         
-if __name__ == '__main__':
-    sm = SqlManager()
-    # sm.create_op_tables()
-    # sm.gen_table_onevts()
-    sm.gen_table_alarmevts()
+# if __name__ == '__main__':
+#     sm = SqlManager()
+#     # sm.create_op_tables()
+#     # sm.gen_table_onevts()
+#     sm.gen_table_alarmevts()
