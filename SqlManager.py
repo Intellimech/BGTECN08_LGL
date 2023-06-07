@@ -10,7 +10,7 @@ class SqlManager:
                 "MachineID":'Error',
                 "FeederID": '0',
                 "Timestamp": 0,
-                "AlertName": 'yarn-break',
+                "AlertCategory": 'yarn-break',
                 "AlertForecastMins": 1440
                 }
     realtime_dflt = {
