@@ -308,7 +308,8 @@ class SqlManager:
                         #For each feeder found in the query
                         for afeeder in feederlist:
                             temp2 = temp1[(temp1['ID_feeder'] == afeeder)]
-                            templist = np.diff(temp2['ID_aq'].to_numpy().astype(int))
+                            templist = (np.diff(pd.to_datetime(temp2['timestamp']).astype('int64')/ 10**9)/60).astype(int)
+                            
                             hrs_sum = hrs_sum + (((np.count_nonzero(templist))+1) * self.t_obs)
                             evt_sum = evt_sum + (np.count_nonzero(templist > 1)+1)
 
@@ -373,7 +374,7 @@ class SqlManager:
                                                 f'{aalarm}' : hrs_sum
                                                 })
                                     connection.execute(insquery)       
-
+                            
     #Function to get machine parameters
     def gen_table_params(db_engine,start_date,end_date):
         db_metadata = MetaData(bind = db_engine)
@@ -510,4 +511,4 @@ class SqlManager:
 #     sm = SqlManager()
 #     # sm.create_op_tables()
 #     # sm.gen_table_onevts()
-#     sm.gen_table_alarmevts()
+#     # sm.gen_table_alarmevts()
